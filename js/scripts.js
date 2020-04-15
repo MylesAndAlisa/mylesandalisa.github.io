@@ -211,9 +211,7 @@ $(document).ready(function () {
     $('#rsvp-form').on('submit', function (e) {
         e.preventDefault();
         var data = $(this).serialize();
-
         $('#alert-wrapper').html(alert_markup('info', '<strong>Date idea submitted!</strong>'));
-
         $.post('https://script.google.com/macros/s/AKfycbxo2mAorDdB-_0cLQv-z97N6f9lxOvelFWtvIlPAm64iKQq3e3t/exec', data)
             .done(function (data) {
                 console.log(data);
