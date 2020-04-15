@@ -47,8 +47,9 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#pictures">Photo Gallery</a></li>
+                            <li><a href="#map">Adventure Map</a></li>
                             <li><a href="#dates">Date Ideas</a></li>
+                            <li><a href="#pictures">Photo Gallery</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,6 +86,58 @@
 				<b id="s"></b> Seconds
 			</div>
 		</div>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Adventure Map</h3>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container">
+        <div class="row">
+                <div id="map-container" class="iframe">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=19S5y0ZqUwy9MT5HS6CTuMT_ROF1vT2CJ&hl=en" width="100%" height="720" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsvp text-center" id="dates">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Date Ideas</h3>
+                <p>Add to our date idea list!</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-heart"></i><input name="idea" class=""
+                                                                     placeholder="Enter date idea"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input name="comment" class=""
+                                                                  placeholder="Enter comment"
+                                                                  optional>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -255,43 +308,6 @@
     <div class="container">
         <div class="row hidden-lg hidden-md hidden-xs">
             <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-</section>
-
-<section class="rsvp text-center" id="dates">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>Date Ideas</h3>
-                <p>Add to our date idea list!</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-heart"></i><input name="idea" class=""
-                                                                     placeholder="Enter date idea"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input name="comment" class=""
-                                                                  placeholder="Enter comment"
-                                                                  optional>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Submit
-                    </button>
-                </form>
-            </div>
         </div>
     </div>
 </section>
