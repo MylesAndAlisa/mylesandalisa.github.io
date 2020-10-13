@@ -12,6 +12,7 @@ fabric.properties
 logs
 *.log
 npm-debug.log*
+*gulp*
 yarn-debug.log*
 yarn-error.log*
 pids
